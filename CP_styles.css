@@ -1,0 +1,75 @@
+:root {
+    /* Nilai default agar tidak kosong saat pertama kali load */
+    --background_color: #ffffff;
+    --secondary_color: #f0f0f0;
+    --text_color: #000000;
+    --btn_clr1: #cccccc;
+    --btn_clr2: #dddddd;
+}
+
+body {
+    text-align: center;
+    background-color: var(--background_color);
+    color: var(--text_color);
+    transition: background-color 0.5s;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+.information {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    white-space: pre-line; /* Agar baris baru (\n) terbaca */
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-size: large;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+    border-radius: 5px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+button:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+.next {
+    background-color: var(--btn_clr1);
+    color: var(--text_color);
+}
+
+.previous {
+    background-color: var(--btn_clr2);
+    color: var(--text_color);
+}
+
+button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+p{
+    font-size: 18px;
+    color: var(--text_color);
+    font-family: monospace;
+    font-size: larger;
+}
+span {
+    color: var(--text_color);
+    font-family: monospace;
+    font-size: larger;
+    max-width: fit-content;
+}
